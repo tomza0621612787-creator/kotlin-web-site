@@ -1,0 +1,76 @@
+@import "@jetbrains/kotlin-web-site-ui/out/components/breakpoints-v2/media.pcss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 72px;
+  margin-bottom: 72px;
+
+  @media (--ktl-ml-down) {
+    gap: 16px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}
+
+.intro {
+  padding: 48px 150px;
+  background-color: #fff;
+  border-radius: 32px;
+  text-align: center;
+
+  @media (--ktl-ml-down) {
+    padding: 32px;
+    border-radius: 16px;
+  }
+
+  @media (--ktl-ms-down) {
+    padding: 24px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  gap: 24px;
+
+  @media (--ktl-ml-down) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    gap: 16px;
+  }
+}
+
+.card {
+  padding: 48px;
+  background-color: #19191c;
+  border-radius: 32px;
+
+  @media (--ktl-ml-down) {
+    padding: 32px;
+    border-radius: 16px;
+  }
+
+  @media (--ktl-ms-down) {
+    padding: 24px;
+  }
+}
+
+.showcase {
+  grid-row: span 3;
+
+  @media (--ktl-ml-down) {
+    grid-row: auto;
+    text-align: center;
+  }
+}
+
+.title {
+  margin-bottom: 18px;
+}
+
+.subtitle {
+  margin-bottom: 28px;
+}
